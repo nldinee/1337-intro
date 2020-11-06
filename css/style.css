@@ -53,6 +53,7 @@ nav .logo svg {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
     color: white;
+    line-height: 28px;
 }
 
 nav .logo svg path {
