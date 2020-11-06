@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+nav {
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: hide 1.5s ease-in-out 8s forwards;
+    animation-iteration-count: 1;
+}
+
+nav .logo svg {
+    animation: let 1s ease-in-out 7s forwards;
+    animation-iteration-count: 1;
+}
+
+.cont {
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+nav .logo svg path {
+    stroke:#fff;
+    fill:#fff;
+    fill-opacity:0;
+    stroke-width:.2;
+    stroke-dasharray: 800;
+    stroke-dashoffset:800;
+}
+
+.path1 {
+    animation:DASH3 4s ease-in-out .5s forwards;
+}
+.path2{
+    animation:DASH3 4s ease-in-out 1.5s forwards;
+}
+.path3{
+    animation:DASH3 4s ease-in-out 2.5s forwards;
+}
+.path4 {
+    animation:DASH3 4s ease-in-out 3.5s forwards;
+}
+
+@keyframes DASH3{
+    0%  {stroke-dashoffset:800;}
+    80%  {stroke-dashoffset:0;fill-opacity:0;}
+    100%{stroke-dashoffset:0;fill-opacity:1;}
+}
+
+
+@keyframes hide{
+    
+    100%{height: 80px;}
+}
+
+@keyframes let{
+    
+    100%{height: 20px;}
+}
